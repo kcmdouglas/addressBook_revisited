@@ -74,6 +74,9 @@ $(document).ready(function() {
 
     $(".contact").last().click(function() {
       $("#show-contact").fadeIn(3000);
+      $("#show-contact").hover(function() {
+        $(this).toggleClass("hover_class");
+      });
       $("#show-contact h2").text(newContact.fullName());
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
